@@ -159,6 +159,9 @@ section p {
 .aboutMeConText li:nth-of-type(3) {
     font-weight: 500;
 }
+.aboutMeText {
+    padding: 30px 0;
+}
 /*section2*/
 .blog {
     background: url("../img/bg_blue.png");
@@ -180,9 +183,9 @@ section p {
 }
 
 /*section3 skills*/
-#skillset {
+#skills {
     background: #fff;
-    padding: 30px 30px 15px 30px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 8px #c1aba04d;
 }
@@ -190,8 +193,9 @@ section p {
 .skillbar {
 	position:relative;
 	display:block;
-	margin-bottom:15px;
 	width:100%;
+    max-width: 800px;
+    margin: 15px auto;
 	background:#eee;
 	height:35px;
 	border-radius:3px;
@@ -381,7 +385,6 @@ width:110px;
 /*projects skills and tooltips*/
 .skillist {
     display: flex;
-    gap: 15px;
     justify-content: start;
     font-size: 0.5rem;
     width: 100%;
@@ -393,6 +396,7 @@ width:110px;
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    margin-right: 15px;
 }
 .skillist li.html {background-position: 35%;}
 .skillist li.css {background-position: 66%;}
@@ -454,8 +458,9 @@ width:110px;
     box-shadow: 0 3px 8px #af9a90c2;
 }
 
-.coronowlogo {
+li.coronowlogo {
     margin: 20px 0;
+    list-style-type: none;
 }
 
 /*section6 contact*/
@@ -635,4 +640,7 @@ width:110px;
         padding-top: 20px;
     }
 
+    #gnb li:last-of-type {
+        display: none;
+    }
 }

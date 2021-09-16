@@ -6,8 +6,8 @@ $(document).ready(function(){
 
         menu.click(function (e) {
           e.preventDefault();
-          let i = $(this).index();
-          let content = $(`#section${i+1}`);
+          let i = $(this).index()+1;
+          let content = $(`#section${i}`);
           let headerH = $(`#headerWrap`).outerHeight();
           let ot = content.offset().top - headerH;
           $(`html,body`).stop().animate({ scrollTop: ot });
@@ -35,7 +35,7 @@ $(document).ready(function(){
             });
         });
 
-        if($(this).width()>1280) {
+        if($(window).width()>1280) {
                 $(`.contact li`).eq(0).html(`<i class="fas fa-envelope-square fa-lg"></i> <br> yeunk0206@naver.com`);
                 $(`.contact li`).eq(1).html(`<i class="fas fa-phone-square fa-lg"></i> <br> 010-9137-1521`);
             }    
@@ -48,18 +48,21 @@ $(document).ready(function(){
                     $(this).find(`.sectionTitle`).addClass(`on`);
                 }
             });
-
-            let aboutTop = $(`.aboutMe`).offset().top - 200;
-            if($(window).scrollTop() > aboutTop) {
-                $(`.contact`).fadeIn(300);
-            } else { $(`.contact`).fadeOut(100); }
-
             //mobile일때 메뉴 숨기기
             if($(window).scrollTop() > 60 && $(window).width() < 640) {
                 gnb.slideUp();
             }
+            
+            //PC화면일때 contact side메뉴 메인으로 내려갔을때 보이게 하기
+            if($(window).width()>=1280) {
+                let aboutTop = $(`.aboutMe`).offset().top -200;
+                if($(window).scrollTop() > aboutTop) {
+                    $(`.contact`).fadeIn(300);
+                } else { $(`.contact`).fadeOut(100); }
+            } else { $(`.contact`).fadeIn(); }
+            
         });
-
+        
         //project thumbnails
         $(`.projects>div`).each(function(i){
             $(this).find(`.slideImg`).css('backgroundImage', `url("img/thumbnail/thumbnail${i+1}.png"`);
