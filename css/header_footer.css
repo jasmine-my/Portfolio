@@ -41,9 +41,15 @@ body {
     position: absolute;
     top: 50%; 
     left: 50%;
+    opacity: 0;
     transform: translate(-50%,-50%);
+    transition: all 1s;
     width: 60px;
 }
+.logo.on {
+    opacity: 1;
+}
+
 #gnb {
     background: url("../img/bg_blue.png");
     position: absolute;
@@ -51,12 +57,12 @@ body {
     right: 0;
     width: 100%;
     text-align: center;
-    padding: 0 24px;
+    padding: 24px;
     display: none;
     box-shadow: 0 10px 8px rgba(41, 62, 63, 0.048);
 }
 #gnb li {
-    padding: 16px;
+    padding: 20px;
     font-size: 1rem;
     font-weight: 600;
     position: relative;
@@ -135,6 +141,7 @@ footer .blogLink img:first-of-type {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 0 24px;
     }
     #gnb li::after {
         width: 70%;

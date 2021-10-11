@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모자도착확인 & 확인증 발급</title>
+    <link rel="shortcut icon" href="../img/figure/shortcut.png">
+    <link rel="stylesheet" href="../css/default_style.css">
+    <link rel="stylesheet" href="../css/sub3_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="../js/savethechildren.js"></script>
+</head>
+<body>
+    <header>
+        <div class="topBtn"><img src="../img/figure/topbutton.png" alt="top button"></div>
+        <div class="bgc">
+            <div class="headerMenu">
+                <h1><a href="../index.html">logo</a></h1> <!--header logo-->
+                <div class="lnbBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">신생아살리기</a></li>
+                        <li><a href="../sub_page/sub_1.html">모자뜨기</a></li>
+                        <li class="on"><a href="../sub_page/sub_3.html">모자도착확인</a></li>
+                        <li><a href="../sub_page/sub_5.html">자원봉사 신청</a></li>
+                        <li><a href="../sub_page/sub_6.html">후원하기</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="sec0">
+            <div class="subSectionBtn">
+                <button class="on" onclick="location.href='#'">모자도착확인 & 확인증 발급</button>
+                <button onclick="location.href='sub_4.html'">단체봉사 확인증 신청</button>
+            </div>
+        </section>
+        <div class="subContainer wrap">
+            <section>
+                <h2 class="sectionTitle">참여자 정보 입력</h2>
+                <ul>
+                    <li>스티커태그에 기재한 성명과 연락처로 모자도착 여부를 확인할 수 있습니다.</li>
+                    <li>스티커태그에 기재해주신 정보와 상이할 경우, 조회가 되지 않습니다.</li>
+                    <li class="red">*만14세 미만의 경우, 참여자 본인의 성명과 스티커태그에 기재한 보호자 연락처를 입력해주세요.</li>
+                </ul>
+                <form>
+                    <div class="input">
+                        <div class="name">
+                            <label for="name">성명</label>
+                            <input type="text" id="name" name="name" placeholder="홍길동" required>
+                        </div>
+                        <div class="phone">
+                            <label for="phoneNum">전화번호</label>
+                            <input type="tel" id="phoneNum" name="phoneNum" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="010-1234-5678" required>
+                        </div>
+                    </div>
+                    <input type="submit" value="조회하기">
+                </form>
+                
+                <h2 class="sectionTitle">모자도착확인 & 확인증발급</h2>
+                <div class="subText">
+                    <ol>
+                        <li>모자 도착 확인
+                            <ul>
+                                <li class='red'>모자 도착일 기준 4주 이내, 모자도착 확인 및 확인증 발급이 가능합니다.
+                                    단, 코로나19로 인해 처리가 지연될 수 있습니다.</li>
+                                <li>※ 모자도착 확인 및 봉사확인증 발급을 위해서는 참여자 정보 입력과 개인 정보 수집 및 이용 동의가 필요합니다.</li>
+                                <li>모자를 보내실 때, 스티커태그에 참여자 정보를 기입하고 개인 정보 수집 및 이용 동의에 체크해주셨다면 별도의 등록이 필요없으나,
+                                    등록된 정보와 다르거나 정보가 없는 경우, 신규 등록 페이지로 이동합니다.</li>
+                            </ul>
+                        </li>
+                        <li>온라인 교육 참여
+                            <ul>
+                                <li>모자도착 확인 및 확인증 발급(본 페이지)에서 정보 조회 후, 온라인 교육 이수 가능합니다.(이수 이후 확인증 발급 가능)</li>
+                            </ul>
+                        </li>
+                        <li>확인증 발급
+                            <ul>
+                                <li>확인증은 캠페인 사이트를 통한 기관 명의(세이브더칠드런)의 자원봉사 확인증으로 발급되며, 인정 여부가 다를 수 있으므로 제출하시려는 곳(학교, 기관 등)에 사전에 문의하시기 바랍니다.</li>
+                                <li>최종 참여자 20인 이상인 단체는 단체봉사확인증을 신청할 수 있습니다.
+                                    <br>자세한 사항은 단체봉사확인증 신청 페이지에서 확인하세요.
+                                    <a href="#" class='red'>단체 봉사확인증 확인하기</a></li>
+                                <li>확인증은 캠페인 사이트를 통해서만 발급 가능하며, <span class="red">1365, VMS, Duvol 등의 외부 시스템에 등록되지 않습니다.(연계 불가)</span></li>
+                                <li>모자뜨기 참여에 의한 봉사시간은 시즌별 1회, 모자 1개 이상인 경우 개수에 상관없이 5시간으로 인정됩니다.</li>
+                                <li>봉사기간 변경은 캠페인 기간 내, <span class="red">사이트에서 2회에 한해 가능하니 신중히 선택해주세요.</span></li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footerWrap wrap">
+            <img src="../img/figure/footerlogo.png" alt="footerlogo" class="footerLogo">
+            <div class="footerContents">
+                <div class="gnb">
+                    <p><a href="#" class="gnbMenu">세이브더칠드런 캠페인 <i class="fas fa-sort-down fa-lg"></i></a></p>
+                    <ul>
+                        <li><a href="#"><img src="../img/figure/Campaign_gnb-2.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/figure/Campaign_gnb-3.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/figure/Campaign_gnb-4.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/figure/Campaign_gnb-5.jpg" alt=""></a></li>
+                        <li><a href="#"><img src="../img/figure/Campaign_gnb-6.jpg" alt=""></a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="../sub_page/sub_6.html">후원하기</a></li>
+                    <li><a href="#">자료실</a></li>
+                    <li><a href="#">사이트 맵</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리</a></li>
+                </ul>
+                <ul class="icon">
+                    <li><a href="#" title="세이브더칠드런 네이버 블로그 바로가기"><img src="../img/figure/sns_naver.png" alt="naver icon"></a></li>
+                    <li><a href="#" title="세이브더칠드런 페이스북 바로가기"><img src="../img/figure/sns_facebook.png" alt="facebook icon"></a></li>
+                    <li><a href="#" title="세이브더칠드런 인스타그램 바로가기"><img src="../img/figure/sns_instagram.png" alt="instagram icon"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

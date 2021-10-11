@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@font-face {
+  src: url("../font/Galaxie_Cassiopeia.otf");
+  font-family: "galaxie";
+}
+:root {
+  --main-bg-color: #b4dd61;
+  --main-green: #54a432;
+  --main-black: #070605;
+  --main-gray: #d1d1d1;
+  --font-gray: #858585;
+}
+/*기본 설정*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  font-family: "Nanum Gothic", sans-serif;
+}
+section {
+  position: relative;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 24px;
+}
+.backGreen {
+  height: 780px;
+  background-color: var(--main-bg-color);
+}
+.brandfont {
+  font-family: "galaxie", sans-serif;
+  font-size: 32px;
+  color: var(--main-green);
+}
+.green {
+  color: var(--main-green);
+  font-size: 1rem;
+}
+.gray {
+  color: var(--font-gray);
+  font-size: 0.8rem;
+}
+.white {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/*nav*/
+#headerWrap {
+  height: 60px;
+  position: relative;
+}
+#gnbWrap {
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+.fixed {
+  position: fixed;
+}
+#gnbWrap::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: var(--main-green);
+  position: absolute;
+  top: 58px;
+  left: 0;
+}
+#gnbWrap #gnb {
+  width: 800px;
+  position: absolute;
+  left: 0;
+  margin-left: 480px;
+  display: flex;
+  justify-content: space-evenly;
+}
+#gnb > li > a {
+  padding: 20px;
+  font-weight: 800;
+  color: var(--main-green);
+  line-height: 60px;
+}
+#gnb > li > a.on,
+#gnb > li > a:hover {
+  color: var(--main-bg-color);
+}
+
+.header-logo {
+  height: 60px;
+  padding: 10px;
+  float: left;
+  position: absolute;
+  left: 250px;
+  top: 0;
+}
+/*slider*/
+#section0 {
+  margin-top: 0;
+  height: 300px;
+}
+.swiper-container {
+  width: 100%;
+  height: 350px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*section*/
+
+#section1 {
+  height: 110vh;
+  text-align: center;
+}
+#section1 .title {
+  margin: 100px 0;
+  line-height: 1.4rem;
+}
+#section1 h2 {
+  font-size: 1.7rem;
+  padding-top: 14px;
+}
+#section1 .text {
+  width: 500px;
+  line-height: 1.8rem;
+  padding-left: 50px;
+}
+#section1 .text .brandfont::after {
+  content: "";
+  width: 450px;
+  height: 1px;
+  background: var(--main-green);
+  position: absolute;
+  top: 215px;
+  left: 70px;
+}
+#section1 .text .green {
+  padding: 50px 0 20px 0;
+  text-align: left;
+}
+#section1 .text .gray {
+  text-align: left;
+}
+#section1 .img {
+  width: 40%;
+  height: 70%;
+  background: url("../img/section2\ img.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: -40px;
+  position: absolute;
+  right: 20px;
+  bottom: 100px;
+  margin-right: 50px;
+  border-radius: 5%;
+}
+#section2 video {
+  height: 80%;
+  position: absolute;
+  top: 10%;
+}
+#section2 .text {
+  position: absolute;
+  right: 150px;
+  top: 250px;
+  width: 280px;
+  height: 300px;
+  background: #fff;
+  border-radius: 30px;
+  padding: 50px 30px;
+  text-align: center;
+  box-shadow: 10px 0 30px 10px rgba(0, 0, 0, 0.1);
+}
+#section2 .text .green {
+  line-height: 1.7rem;
+  margin: 20px 0;
+}
+#section2 .text .gray {
+  font-size: 0.9rem;
+}
+#section2 .more {
+  margin: 50px 0 0 100px;
+}
+#section2 .more a p:hover {
+  color: var(--main-black);
+  font-weight: 700;
+}
+#section2 i {
+  padding-left: 10px;
+}
+
+#section3 {
+  min-height: 800px;
+  text-align: center;
+}
+
+#section3 .brandfont {
+  padding: 80px 0;
+}
+
+.menubox {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menubox .menu {
+  width: 262px;
+  height: 340px;
+  border: 2px solid var(--main-gray);
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.menu .black {
+  color: var(--main-black);
+  font-size: 1.2rem;
+  padding: 20px 0 10px 0;
+}
+.menu .gray {
+  font-size: 1rem;
+}
+
+.menubox .menu:hover {
+  border: 2px solid var(--main-green);
+}
+
+.menubox .menu img {
+  margin-top: 20px;
+  width: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu img.arrowbtn {
+  width: 30px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+
+#section3 button {
+  width: 300px;
+  height: 52px;
+  border-radius: 30px;
+  background: var(--main-bg-color);
+  cursor: pointer;
+  border: none;
+  margin-top: 70px;
+}
+#section4 {
+  height: 110vh;
+}
+#section4 > p:first-child {
+  text-align: center;
+}
+#section4 .maplist ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 100px 0px;
+}
+#section4 .maplist ul li {
+  margin: 20px;
+  padding: 10px 30px;
+  border: 1px solid var(--main-gray);
+  border-radius: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--font-gray);
+}
+#section4 .maplist ul li.on,
+#section4 .maplist ul li:hover {
+  cursor: pointer;
+  background-color: var(--main-bg-color);
+  color: #fff;
+  border: 1px solid var(--main-bg-color);
+}
+#section4 .mapContainer {
+  position: relative;
+}
+
+#section4 .mapContainer .map {
+  width: 500px;
+  height: 280px;
+  background-image: url("../img/map/map_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+#section4 .mapContainer .mapTextBox {
+  width: 500px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 600px;
+}
+.mapTextBox .green {
+  margin: 20px 0px 50px 0px;
+  line-height: 1.2rem;
+}
+#section4 .mapContainer .mapTextBox > ul {
+  margin-top: 20px;
+  display: flex;
+  font-weight: 700;
+  color: var(--font-gray);
+}
+.mapTextBox ul ul li {
+  font-weight: 400;
+  margin-right: 20px;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#section5 {
+  text-align: center;
+  height: 550px;
+  padding-bottom: 300px;
+}
+#section5 .snsIcon img {
+  width: 50px;
+  margin: 30px 20px;
+}
+
+.owl-carousel {
+  padding: 80px 0;
+}
+
+.owl-carousel .item {
+  width: 210px;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*footer*/
+footer {
+  height: 300px;
+  background: var(--main-black);
+  position: relative;
+}
+footer,
+footer a {
+  color: var(--main-gray);
+}
+.footer > ul {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+.footer > ul > li {
+  float: left;
+  margin-right: 50px;
+}
+.footer > ul > li li {
+  margin-top: 10px;
+}
+.footer > ul > li li a {
+  color: var(--font-gray);
+}
+.footer > ul > li li:hover a {
+  color: var(--main-gray);
+}
+footer p {
+  width: 800px;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  text-align: center;
+  line-height: 1rem;
+}
+footer img {
+  width: 180px;
+  position: absolute;
+  right: 25%;
+  top: 27%;
+}

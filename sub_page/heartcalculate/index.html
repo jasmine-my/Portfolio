@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Calculate</title>
+    <link rel="stylesheet" href="gridstyle.css">
+    <script src="grid.js"></script>
+</head>
+<body>
+    <h1> &#x2763; Heart Calculator &#x2763; </h1>
+    <div class="heart">
+        <form name="forms" class="calculator">
+            <input type="text" name="output" class="display">
+            <input type="button" value="C" class="btn clear" onclick="document.forms.output.value=``">
+            <input type="button" value="%" class="btn" onclick="document.forms.output.value+=`%`">
+            <input type="button" value="/" class="btn operator" onclick="document.forms.output.value+=`/`">
+            <input type="button" value="7" class="btn" onclick="document.forms.output.value+=`7`">
+            <input type="button" value="8" class="btn" onclick="document.forms.output.value+=`8`">
+            <input type="button" value="9" class="btn" onclick="document.forms.output.value+=`9`">
+            <input type="button" value="*" class="btn operator" onclick="document.forms.output.value+=`*`">
+            <input type="button" value="4" class="btn" onclick="document.forms.output.value+=`4`">
+            <input type="button" value="5" class="btn" onclick="document.forms.output.value+=`5`">
+            <input type="button" value="6" class="btn" onclick="document.forms.output.value+=`6`">
+            <input type="button" value="+" class="btn operator" onclick="document.forms.output.value+=`+`">
+            <input type="button" value="1" class="btn" onclick="document.forms.output.value+=`1`">
+            <input type="button" value="2" class="btn" onclick="document.forms.output.value+=`2`">
+            <input type="button" value="3" class="btn" onclick="document.forms.output.value+=`3`">
+            <input type="button" value="-" class="btn operator" onclick="document.forms.output.value+=`-`">
+            <input type="button" value="0" class="btn" onclick="document.forms.output.value+=`0`">
+            <input type="button" value="." class="btn dot" onclick="document.forms.output.value+=`.`">
+            <input type="button" value="=" class="btn operator result" onclick="document.forms.output.value=eval(document.forms.output.value)">
+        </form>
+    </div>
+</body>
+</html>

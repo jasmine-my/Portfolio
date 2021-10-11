@@ -1,0 +1,80 @@
+@import "reset.css";
+@font-face {
+src: url("Love Craft.otf");
+font-family: "love";
+}
+body {
+    background-color: rgb(253, 239, 216);
+    font-family: "love", sans-serif;
+    width: 80%;
+    min-width: 600px;
+    margin: 50px auto;
+}
+/*calculator background*/
+.heart {
+    margin: 180px auto;
+    width: 350px;
+    height: 350px;
+    background-color: rgb(253, 190, 234);
+    position: relative;
+    transform: rotate(45deg);
+    border-radius: 10px;
+}
+.heart::before,
+.heart::after {
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: rgb(253, 190, 234);
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+}
+.heart::after {
+    left: -50%;
+    top: 0;
+}
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/*calculator*/
+form {
+    display: grid;
+    grid-template-columns: repeat(4,65px);
+    grid-auto-rows: 50px;
+    gap: 6px;
+    z-index: 99;
+    position: absolute;
+    top: -40px;
+    left: -15px;
+    transform: rotate(-45deg);
+}
+form input {
+    cursor: pointer;
+    border-radius: 20px;
+}
+form input:hover {
+    box-shadow: 0 0 3px 1px rgba(119, 84, 129, 0.884);
+}
+form input:not([type="text"]){
+    background-color: rgba(195, 111, 221, 0.856);
+    color: #fff;
+    font-family: "love", sans-serif;
+    font-size: 20px;
+}
+form input[type="text"] {
+    text-align: end;
+    padding: 0 10px;
+    grid-column: span 4;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+form input:last-child {
+    grid-column: span 2;
+}
+form input:nth-child(2) {
+    grid-column: span 2;
+}

@@ -1,0 +1,113 @@
+section.sec0 {
+    width: 100%;
+    height: 300px;
+    background: url("../img/section_img/bg.png") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.subSectionBtn {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sec0 button {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: var(--main-whiteyellow-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sec0 button a{
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.sec0 button:hover,
+.sec0 button.on {
+    background: var(--section-bg-color);
+    color: var(--main-red-color);
+}
+
+.subContainer {
+    background: var(--section-bg-color);
+}
+section h2 {
+    margin: 20px 0;
+}
+/*sub5*/
+
+.subBoxContainer {
+    margin: 30px 0;
+}
+.subBoxContainer div {
+    background: var(--main-bg-color);
+    width: 300px;
+    height: 550px;
+    margin: 30px auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.subBoxContainer img{
+    width: 100%;
+    margin: 10px 0;
+}
+.subBoxContainer p {
+    font-size: 0.8rem;
+}
+.subBoxContainer ul li {
+    font-size: 0.9em;
+    text-align: start;
+}
+.subBoxContainer ul:first-of-type {
+    margin: 20px 0;
+}
+.subBoxContainer ul:first-of-type li{
+    list-style-type: '✔';
+    color: var(--main-red-color);
+    line-height: 1.5em;
+}
+.subBoxContainer ul:nth-of-type(2) li {
+    font-size: 0.8em;
+    list-style-type: '- ';
+    color: var(--main-gray-color)
+}
+.red {
+    color: var(--main-red-color);
+}
+
+@media all and (min-width:768px) {
+    .wrap {
+        width: 80%;
+        padding-bottom: 80px;
+        margin-bottom: 100px;
+    }
+    .footerWrap {
+        margin-bottom: 0;
+    }
+    .subBoxContainer {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+    }
+    .subBoxContainer div {
+        margin: 0 10px;
+        width: 400px;
+        height: 600px;
+    }
+}
+@media all and (min-width:1024px) {
+    .wrap{
+        width: 70%;
+    }
+}

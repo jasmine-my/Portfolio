@@ -1,0 +1,168 @@
+section.sec0 {
+    width: 100%;
+    height: 300px;
+    background: url("../img/section_img/bg.png") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.subSectionBtn {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sec0 button {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: var(--main-whiteyellow-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sec0 button a{
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+.sec0 button:hover,
+.sec0 button.on {
+    background: var(--section-bg-color);
+    color: var(--main-red-color);
+}
+
+.subContainer {
+    background: var(--section-bg-color);
+}
+section h2 {
+    margin: 20px 0;
+}
+.red {
+    color: var(--main-red-color);
+}
+.sectionTitle{
+    font-size: 1.2em;
+}
+.sectionTitle:nth-of-type(2):after {
+    content: "";
+    width: 280px;
+}
+/*sub3*/
+h3.red {
+    text-align: start;
+    font-size: 0.8em;
+    padding-bottom: 30px; 
+}
+.donationlist li {
+    font-size: 0.9em;
+    text-align: start;
+    padding: 5px 0;
+    border-top: 1px solid rgba(1,1,1,0.1);
+    border-bottom: 1px solid rgba(1,1,1,0.1);
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    text-align: end;
+    padding-right: 10px;
+}
+input[type="checkbox"] {
+    width: 20px;
+}
+input[type="checkbox"]:checked {
+    background-color: #fff;
+    border-color: var(--main-red-color);
+    color: var(--main-red-color);
+}
+select,
+input[type="text"] {
+    padding-left: 10px;
+    background: #fff;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin: 5px 0;
+    border: 1px solid rgba(1,1,1,0.1);
+    text-align: end;
+}
+.subText {
+    background: var(--main-bg-color);
+    padding: 20px 20px 40px 20px;
+    margin: 40px 0;
+}
+button.next {
+    margin: 50px 0;
+}
+li.total {
+    text-align: center;
+}
+p.bottom {
+    text-align: start;
+    font-size: 0.8em;
+}
+
+@media all and (min-width:768px) {
+    .wrap {
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    .footerWrap {
+        margin-bottom: 0;
+    }
+    .wrap section {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .sectionTitle{
+        font-size: 1.5em;
+    }
+    .subBtnContainer {
+        flex-direction: row;
+        width: 500px;
+    }
+    .subBtnContainer button{
+        width: 40%;
+        margin-right: 2%;
+    }
+    .subSectionBtn {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    form .selection {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    form .selection select {
+        margin-right: 10px;
+    }
+}
+@media all and (min-width:1024px) {
+    .wrap{
+        width: 70%;
+    }
+    .subSectionBtn {
+        width: 70%;
+        max-width: 1200px;
+    }
+}

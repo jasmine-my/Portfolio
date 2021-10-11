@@ -1,0 +1,152 @@
+section.sec0 {
+    width: 100%;
+    height: 300px;
+    background: url("../img/section_img/bg.png") center center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.subSectionBtn {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.sec0 button {
+    width: 50%;
+    height: 100%;
+    border: none;
+    background: var(--main-whiteyellow-color);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.sec0 button a{
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+.sec0 button:hover,
+.sec0 button.on {
+    background: var(--section-bg-color);
+    color: var(--main-red-color);
+}
+
+.subContainer {
+    background: var(--section-bg-color);
+}
+section h2 {
+    margin: 20px 0;
+}
+/*sub1*/
+.process {
+    text-align: start;
+    padding: 30px 0 50px 30px;
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    margin: 0 auto;
+}
+.process ol li{
+    list-style: decimal-leading-zero;
+    margin-left: 20px;
+    line-height: 1.8em;
+}
+.process>ul>li {
+    margin: 40px 0;
+    position: relative;
+}
+.process>ul>li p {
+    padding: 5px 0;
+}
+.process>ul>li .countNum{
+    font-size: 2em;
+    color:#fff;
+    position: absolute;
+    left: -64px;
+    top: 0;
+    z-index: 99;
+}
+.process>ul>li::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--main-red-color);
+    position: absolute;
+    left: -80px;
+    top: 0;
+}
+
+iframe {
+    margin-top: 50px;
+    width: 80%;
+    height: 300px;
+}
+
+h3.red {
+    color: var(--main-red-color);
+}
+h3.red ~ ul {
+    margin: 20px 0;
+}
+h3.red ~ ul li {
+    line-height: 1.8em;
+    margin-left: 10px;
+}
+.knittingDesign {
+    width: 100%;
+}
+
+@media all and (min-width:768px) {
+    .wrap {
+        width: 80%;
+        padding-bottom: 80px;
+        margin-bottom: 100px;
+    }
+    .footerWrap {
+        margin-bottom: 0;
+    }
+    .process>ul>li .box {
+        width: 430px;
+    }
+    .process::before {
+        height: 65%;
+    }
+    .subBtnContainer {
+        flex-direction: row;
+        width: 500px;
+    }
+    .subBtnContainer button{
+        width: 40%;
+        margin-right: 2%;
+    }
+    .subSectionBtn {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    iframe{
+        width: 560px;
+        height: 315px;
+    }
+
+}
+@media all and (min-width:1024px) {
+    .wrap{
+        width: 70%;
+    }
+    .subSectionBtn {
+        width: 70%;
+        max-width: 1200px;
+    }
+    iframe{
+        width: 700px;
+        height: 400px;
+    }
+}

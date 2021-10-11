@@ -1,0 +1,272 @@
+:root {
+    --main-bg-color: #fff6ed;
+    --section-bg-color: #ffedda;
+    --main-red-color: #e61414;
+    --main-yellow-color: #ffb830;
+    --main-whiteyellow-color: #fce1ad;
+    --main-gray-color: #7b7b7b;
+    --main-darkgray-color: #363636;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Work+Sans:wght@800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background-color: var(--main-bg-color);
+    font-family: 'Noto Sans KR', sans-serif;
+    min-width: 300px;
+}
+.wrap {
+    padding: 24px;
+}
+p {
+    font-size: 0.85em;
+}
+.bg {
+    background: var(--section-bg-color);
+}
+.yellow{
+    background: var(--main-yellow-color);
+    color: var(--main-red-color);
+    box-shadow: 4px 4px var(--main-red-color);
+}
+.whiteyellow{
+    background: var(--main-whiteyellow-color);
+    color: var(--main-darkgray-color);
+    box-shadow: 4px 4px var(--main-yellow-color);
+}
+.topBtn{
+    display: none;
+}
+.topBtn img{
+    width: 50px;
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 100;
+    cursor: pointer;
+}
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    font-size: large;
+}
+.btn {
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9em;
+    height: 50px;
+    width: 80%;
+    transition: all 0.3s ease-in;
+}
+.btn:hover,
+.btn:active {
+    box-shadow: none;
+    transform: translate(3px,3px);
+}
+header {
+    position: relative;
+    height: 75px;
+    background: var(--section-bg-color);
+}
+header h1{
+    width: 100px;
+    height: 60px;
+    background: url("../img/figure/logo.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-indent: -99999px;
+}
+header h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header .lnbBtn {
+    position: absolute;
+    top: 50%;
+    left: 24px;
+    transform: translateY(-45%);
+    width: 30px;
+    cursor: pointer;
+}
+header .lnbBtn span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin-bottom: 5px;
+    background: var(--main-red-color);
+}
+header nav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--main-bg-color);
+    padding: 24px;
+    z-index: 100;
+}
+header nav ul li {
+    border-bottom: 1px solid var(--main-darkgray-color);
+    padding: 10px;
+    transform: translateY(5px);
+    transition: all 0.3s;
+}
+header nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+header nav ul li:hover,
+header nav ul li.on {
+    color: var(--main-red-color);
+}
+
+section{
+    position: relative;
+    text-align: center;
+}
+.sectionTitle {
+    color: var(--main-red-color);
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.sectionTitle::after {
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: var(--main-red-color);
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+footer {
+    border-top: 2px solid var(--main-red-color);
+}
+.footerWrap{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.7em;
+}
+.footerContents {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+footer .footerLogo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+footer .icon img{
+    width: 20px;
+}
+footer .gnb {
+    position: relative;
+}
+footer ul li {
+    margin-bottom: 5px;
+}
+footer .gnb ul{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left:0;
+}
+footer .gnb ul li {
+    margin: 0;
+    width: 150px;
+}
+footer .gnb ul li img {
+    width: 100%;
+}
+
+@media all and (min-width:768px) {
+    p {
+        font-size: 1em;
+    }
+    .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .headerMenu {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 75px;
+    }
+    header h1 {
+        left: 0;
+    }
+    header .lnbBtn {
+        display: none;
+    }
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 24px;
+        width: auto;
+        background: transparent;
+        padding: 0;
+        height:75px;
+    }
+    header nav ul {
+        display: flex;
+    }
+    header nav ul li {
+        transition: all 0.3s;
+        transform: translateY(5px);
+        border-bottom: 5px solid transparent;
+        padding: 20px 10px;
+    }
+    header nav ul li:hover,
+    header nav ul li.on {
+        border-bottom: 5px solid var(--main-red-color);
+    }
+
+    .footerWrap {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.8em;
+        margin-bottom: 0; 
+    }
+    footer .gnb ul li {
+        width: 180px;
+    }
+}
+
+@media all and (min-width:1024px) {
+    
+    header nav ul li {
+        padding: 20px;
+    }
+    footer .gnb ul li {
+        width: 200px;
+    }
+}
