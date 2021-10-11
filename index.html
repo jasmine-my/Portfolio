@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nae Yeon Kyeong-Portfolio</title>
+    <title>Yeonkyeong Nae-Portfolio</title>
+    <meta name="description" content="프론트엔드 개발자 내연경의 포트폴리오 입니다">
+    <meta property="og:type" content="website">
+	<meta property="og:title" content="Yeonkyeong Nae-Portfolio" />
+	<meta property="og:description" content="프론트엔드 개발자 내연경의 포트폴리오 입니다" />
+	<meta property="og:image" content="img/logo/logo.png" />
+	<meta property="og:url" content="http://yescode.dothome.co.kr" />
     <link rel="shortcut icon" href="img/logo/favicon.png">
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,7 +46,7 @@
         </div>
         <section class="aboutMe" id="section1">
             <h3 class="sectionTitle">ABOUT ME</h3>
-            <div class="aboutMeWrap">
+            <div class="aboutMeWrap slideup">
                 <ul class="aboutMeCon">
                     <li>
                         <ul class="aboutMeConText">
@@ -57,13 +63,14 @@
                     <li>
                         <ul class="aboutMeConText">
                             <li>학력</li>
-                            <li>숙명여자대학교(르꼬르동블루 외식경영전공)</li>
+                            <li>2019 숙명여자대학교 졸업(르꼬르동블루 외식경영전공)</li>
                         </ul>
                     </li>
                     <li>
                         <ul class="aboutMeConText">
                             <li>교육</li>
-                            <li>UI/UX 웹디자인&웹퍼블리셔(프론트엔드)과정 수료</li>
+                            <li>2021 UI/UX 웹디자인&웹퍼블리셔(프론트엔드)과정 수료</li><br>
+                            <li>2021 디지털그래픽디자인(일러스트+포토샵)과정 수료</li>
                         </ul>
                     </li>
                     <li>
@@ -80,7 +87,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="aboutMeText">
+            <div class="aboutMeText slideup">
                 <h4>저는 궁금하면 직접 부딪혀 경험하며 일을 할 때는 효율적인 것을 추구합니다.<br>
                 이러한 저의 성향이 개발이라는 직무와 잘 맞는다는 생각이 들어 유통회사 2년 차에 웹 프론트엔드 개발 직무에 도전했습니다.</h4>
     
@@ -99,18 +106,28 @@
         </section>
         <section class="blog" id="section2">
             <h3 class="sectionTitle">BLOG</h3>
-            <h4>배우기를 멈추지 않는 사람입니다.</h4>
-            <p>프로젝트를 진행하면서 학습하고 깨달은 내용들을 블로그, 깃허브에 정리하며 습득하고 있습니다.</p>
-            <ul class="blogLink">
+            <h4 class="slideup">배우기를 멈추지 않는 사람입니다.</h4>
+            <p class="slideup">프로젝트를 진행하면서 학습하고 깨달은 내용들을 블로그, 깃허브에 정리하며 습득하고 있습니다.</p>
+            <ul class="blogLink slideup">
                 <li>
                     <a href="https://blog.naver.com/yeunk0206" target="_blank">
-                        <img src="img/logo/naverblog-logo.png" alt="naver blog logo">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <img class="flip-card-front" src="img/logo/naverblog-logo.png" alt="naver blog logo">
+                                <img class="flip-card-back" src="img/logo/logo1x1.png" alt="logo image">
+                            </div>
+                        </div>
                         <br>네이버 블로그 바로가기
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/jasmine-my" target="_blank">
-                        <img src="img/logo/github_logo.png" alt="github logo">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <img class="flip-card-front" src="img/logo/github_logo.png" alt="github logo">
+                                <img class="flip-card-back" src="img/logo/logo1x1.png" alt="logo image">
+                            </div>
+                        </div>
                         <br>깃허브 바로가기
                     </a>
                 </li>
@@ -157,10 +174,10 @@
         </section>
         <section class="projects" id="section4">
             <h3 class="sectionTitle">PROJECTS</h3>
-            <h4>간결하고 읽기 쉬운 코드를 지향합니다</h4>
-            <p>원하는 결과를 위한 가장 간결한 방법을 고민합니다.</p>
+            <h4 class="slideup">간결하고 읽기 쉬운 코드를 지향합니다</h4>
+            <p class="slideup">원하는 결과를 위한 가장 간결한 방법을 고민합니다.</p>
             <p class="brown">* 아래 프로젝트는 개인 프로젝트로서 학습목적으로 제작되었습니다.</p>
-            <div class="slideContainer">
+            <div class="slideContainer slideup">
                 <h4>세이브더칠드런 캠페인 홈페이지</h4>
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
@@ -187,7 +204,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p class="brown">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
+                            <p class="brown blink">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
                       </div>
                       <div class="swiper-slide">
                         <div class="slideCon">
@@ -206,7 +223,7 @@
                         </div>
                     </div>
                     <div class="slideBtn">
-                        <button onclick="window.open('sub_page/savethechildren/index.html')">VIEW WEBSITE</button>
+                        <button onclick="window.open('http://yesfrontend.dothome.co.kr/savethechildren/index.html')">VIEW WEBSITE</button>
                         <button onclick="window.open('https://github.com/jasmine-my/save-the-chilren')">VIEW CODE</button>
                     </div>
                 </div>
@@ -238,7 +255,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p class="brown">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
+                            <p class="brown blink">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
                       </div>
                       <div class="swiper-slide">
                         <div class="slideCon">
@@ -266,7 +283,7 @@
                         </div>
                     </div>
                     <div class="slideBtn">
-                        <button onclick="window.open('sub_page/shakeshack/index.html')">VIEW WEBSITE</button>
+                        <button onclick="window.open('http://yesfrontend.dothome.co.kr/shakeshack/index.html')">VIEW WEBSITE</button>
                         <button onclick="window.open('https://github.com/jasmine-my/shakeshack')">VIEW CODE</button>
                     </div>
                 </div>
@@ -299,7 +316,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p class="brown">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
+                            <p class="brown blink">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
                       </div>
                       <div class="swiper-slide">
                         <div class="slideCon">
@@ -355,7 +372,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <p class="brown">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
+                        <p class="brown blink">옆으로 넘겨 디테일을 확인해 보세요 >>></p>
                       </div>
                       <div class="swiper-slide">
                         <div class="slideCon">
@@ -380,15 +397,15 @@
         </section>
         <section class="contact" id="section5">
             <h3 class="sectionTitle">CONTACT</h3>
-            <p>궁금한 점이 있으시다면, 언제든지 아래 연락처로 연락 바랍니다.</p>
-            <p>🖱️click & 📋copy</p>
-            <ul class="contactList">
+            <p class="slideup">궁금한 점이 있으시다면, 언제든지 아래 연락처로 연락 바랍니다.</p>
+            <p class="slideup blink">🖱️click & 📋copy</p>
+            <ul class="contactList slideup">
                 <li class="copy"><i class="fas fa-envelope-square fa-lg"></i> yeunk0206@naver.com <input type="text" class="copyLink" value="yeunk0206@naver.com"></li>
                 <li class="copy"><i class="fas fa-phone-square fa-lg"></i> 010-9137-1521 <input type="text" class="copyLink" value="010-9137-1521"></li>
             </ul>
         </section>
         <section class="thanks">
-            <div class="thanksWrap">
+            <div class="thanksWrap slideup">
                 <img src="img/logo/logo.png" alt="logo">
                 <h2>감사합니다</h2>
             </div>
@@ -404,22 +421,21 @@
         </ul>
     </footer>
     <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-    <script>
-            var offsetTop = $('#skills').offset().top;
-            $(window).scroll(function() {
-            var height = $(window).height();
-            if($(window).scrollTop()+height > offsetTop) {
-            jQuery('.skillbar').each(function(){
-                jQuery(this).find('.skillbar-bar').animate({
-                width:jQuery(this).attr('data-percent')
-                },2000);
-            });
-            }
-            });
-    </script>
     <script src="js/portfolio.js"></script>
     <script src="js/swiper-bundle.js"></script>
     <script>
+        var offsetTop = $('#skills').offset().top;
+        $(window).scroll(function() {
+        var height = $(window).height();
+        if($(window).scrollTop()+height > offsetTop) {
+        jQuery('.skillbar').each(function(){
+            jQuery(this).find('.skillbar-bar').animate({
+            width:jQuery(this).attr('data-percent')
+            },2000);
+        });
+        }
+        });
+
         var swiper = new Swiper(".mySwiper", {});
     </script>
 </body>
